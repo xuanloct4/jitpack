@@ -1,7 +1,6 @@
 package com.example.calendarsdk.domain.usecase
 
 import android.annotation.SuppressLint
-import android.util.Log
 import com.example.calendarsdk.domain.entities.HolidayConsensus
 import com.example.calendarsdk.repository.HolidayRepository
 import java.text.SimpleDateFormat
@@ -35,7 +34,5 @@ class CheckHolidayUseCase(
         } catch (e: Exception) {
             return false
         }
-
-
     }
 }

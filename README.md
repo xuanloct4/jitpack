@@ -48,11 +48,11 @@ val isHoliday = checkHolidayUseCase.isHoliday(yearInt, monthInt, dayInt, consens
        fun isValidDate(year, month, day): Bool
        suspend fun isHoliday(year, month, day, consensus): Bool
 ```
-##### Parameters
-`year`: Integer between 0 and 3000.
-`month`: Integer between 1 and 12.
-`day`: Integer valid for the given month/year.
-`consensus`: One of `ANY`, `ALL`, or `CONSENSUS`.
+**Parameters**
+- `year`: Integer between 0 and 3000.
+- `month`: Integer between 1 and 12.
+- `day`: Integer valid for the given month/year.
+- `consensus`: One of `ANY`, `ALL`, or `CONSENSUS`.
 
 ### Unit Testing
 The SDK includes comprehensive unit tests covering:
@@ -72,3 +72,9 @@ The SDK includes comprehensive unit tests covering:
 A sample app demonstrating the SDK's usage can be found in the `app` directory.
 The app integrates the `CalendarSDK` using `Clean Architecture`[https://medium.com/simform-engineering/clean-architecture-in-android-12d61c4f5318] principles.
 Build the app and install the APK to see the SDK in action.
+
+### Areas for Improvement
+Due to time constraints, certain advanced techniques were not implemented in the SDK, including:
+- **Utilization of Dependency Injection**: Incorporating tools such as Dagger or Hilt to enhance scalability and manageability of dependencies.
+- **Extensibility for Additional APIs**: Designing the SDK to support dynamic integration of additional APIs through dependency injection or a plugin-based architecture.
+- **Standardization of Interfaces and Factories**: Establishing common interfaces and factory patterns to provide a unified approach for handling requests and responses across various APIs.
