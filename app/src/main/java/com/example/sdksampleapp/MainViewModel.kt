@@ -18,9 +18,6 @@ class MainViewModel() : ViewModel() {
 
     fun checkHoliday(year: String, month: String, day: String, consensus: HolidayConsensus) {
         viewModelScope.launch {
-
-
-
             val calendarSDK = CalendarSDK.instance
                 calendarSDK.calendarAPIKEY = "tqjgBSbRun3jDj9gfAkmu2WPbWuFsVX9"
                 calendarSDK.holidayAbstractApiKey = "402632df3ba24d988ce1c3e3029ebf3c"
