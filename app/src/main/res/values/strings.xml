@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SDKSampleApp</string>
+    <string-array name="consensus_modes">
+        <item>ANY</item>
+        <item>ALL</item>
+        <item>CONSENSUS</item>
+    </string-array>
+</resources>

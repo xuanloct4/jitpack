@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/year_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter year"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/month_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter month"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/day_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter day"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/consensus_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/consensus_modes" />
+
+    <Button
+        android:id="@+id/check_holiday_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Holiday" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will be displayed here"
+        android:textSize="16sp"
+        android:paddingTop="20dp" />
+</LinearLayout>
