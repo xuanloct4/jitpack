@@ -1,7 +1,10 @@
 package com.example.calendarsdk.domain.usecase
 
+import android.annotation.SuppressLint
+import android.util.Log
 import com.example.calendarsdk.domain.entities.HolidayConsensus
 import com.example.calendarsdk.repository.HolidayRepository
+import java.text.SimpleDateFormat
 
 class CheckHolidayUseCase(
     private val repository: HolidayRepository
@@ -15,12 +18,24 @@ class CheckHolidayUseCase(
         }
     }
 
+    @SuppressLint("SimpleDateFormat")
     fun isValidDate(year: Int, month: Int, day: Int): Boolean {
         if (year < 0 || year > 3000) return false
         if (month < 1 || month > 12) return false
         if (day < 1 || day > 31) return false
 
-        // Simplified validation for brevity. Should include checks for months with fewer than 31 days.
-        return true
+
+        try {
+            val dateFormat = SimpleDateFormat("yyyy-M-d")
+            dateFormat.isLenient = false
+
+            val dateFromComponents = "${year}-${month}-${day}"
+            dateFormat.parse(dateFromComponents)
+            return true
+        } catch (e: Exception) {
+            return false
+        }
+
+
     }
 }
