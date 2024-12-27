@@ -61,3 +61,9 @@ publishing {
         }
     }
 }
+
+
+// Fix task dependency issue
+tasks.withType<PublishToMavenLocal>().configureEach {
+    dependsOn("bundleReleaseAar")
+}
