@@ -50,13 +50,13 @@ dependencies {
 }
 
 
-//publishing {
-//    publications {
-//        create<MavenPublication>("release") {
-//            from(components["release"])
-//            groupId = "com.github.xuanloct4"
-//            artifactId = "jitpack"
-//            version = "1.1.1"
-//        }
-//    }
-//}
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            from(components["release"])
+            groupId = "com.github.xuanloct4"
+            artifactId = "jitpack"
+            version = "1.1.5"
+        }
+    }
+}

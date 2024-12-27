@@ -53,7 +53,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 //    implementation(project(":calendarsdk"))
-    implementation("com.github.xuanloct4:jitpack:v1.1.3")
+    implementation("com.github.xuanloct4:jitpack:v1.1.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
