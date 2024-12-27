@@ -25,5 +25,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SDKSampleApp"
-include(":app")
+//include(":app")
 include(":calendarsdk")
