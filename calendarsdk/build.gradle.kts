@@ -1,7 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
+
+
 
 android {
     namespace = "com.example.calendarsdk"
@@ -45,3 +48,15 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
 }
+
+
+//publishing {
+//    publications {
+//        create<MavenPublication>("release") {
+//            from(components["release"])
+//            groupId = "com.example"
+//            artifactId = "calendarsdk"
+//            version = "1.0.0"
+//        }
+//    }
+//}
