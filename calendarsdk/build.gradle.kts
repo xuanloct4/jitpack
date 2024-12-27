@@ -54,9 +54,9 @@ dependencies {
 //    publications {
 //        create<MavenPublication>("release") {
 //            from(components["release"])
-//            groupId = "com.example"
-//            artifactId = "calendarsdk"
-//            version = "1.0.0"
+//            groupId = "com.github.xuanloct4"
+//            artifactId = "jitpack"
+//            version = "1.1.1"
 //        }
 //    }
 //}

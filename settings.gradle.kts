@@ -9,6 +9,9 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            url = uri("https://jitpack.io")
+        }
     }
 }
 
@@ -25,5 +28,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SDKSampleApp"
-include(":app")
+//include(":app")
 include(":calendarsdk")
